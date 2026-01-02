@@ -110,7 +110,7 @@ export function VideoUpload({ onVideoUploaded }: VideoUploadProps) {
       formData.append('file', file);
       
       xhr.open('POST', uploadUrl);
-      xhr.send(formData);
+      xhr.send(file);
     });
   };
 
